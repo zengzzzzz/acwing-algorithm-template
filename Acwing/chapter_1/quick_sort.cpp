@@ -1,9 +1,13 @@
 /*
- * @Author: zengzh 
- * @Date: 2023-03-12 15:22:53 
- * @Last Modified by:   zengzh 
- * @Last Modified time: 2023-03-12 15:22:53 
+ * @Author: zengzh
+ * @Date: 2023-03-12 15:22:53
+ * @Last Modified by: zengzh
+ * @Last Modified time: 2023-03-12 16:30:00
  */
+
+// 1 确定 mid
+// 2 确定在 mid 左右的数
+// 3 递归2步骤
 
 #include <stdio.h>
 #include <algorithm>
