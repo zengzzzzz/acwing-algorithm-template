@@ -21,7 +21,7 @@ void merge_sort(int q[], int l, int r)
         return;
     int mid = (l + r) >> 1;
     merge_sort(q, l, mid), merge_sort(q, mid + 1, r);
-    int k = 0, i = l, j = mid + 1;
+    int i = l , j = mid + 1, k = 0;
     while (i <= mid && j <= r)
     {
         if (q[i] < q[j])
@@ -37,9 +37,9 @@ void merge_sort(int q[], int l, int r)
         tmp[k++] = q[i++];
     while (j <= r)
         tmp[k++] = q[j++];
-    for (int i = l, j = 0; i <= r; i++, j++)
+    for (int i = l, j = 0; i <= r; )
     {
-        q[i] = tmp[j];
+        q[i++] = tmp[j++];
     }
 }
 int main()
