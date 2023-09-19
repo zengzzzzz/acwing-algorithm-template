@@ -26,11 +26,12 @@ void quick_sort(int q[], int l, int r)
         do
             j--;
         while (q[j] > mid);
-        if (i <  j){
+        if (i < j)
+        {
             swap(q[i], q[j]);
         }
     }
-    quick_sort(q, l, j), quick_sort(q, j+1, r);
+    quick_sort(q, l, j), quick_sort(q, j + 1, r);
 }
 
 int main()
