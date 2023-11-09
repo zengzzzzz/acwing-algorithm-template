@@ -28,7 +28,7 @@
 //     }
 //     return l;
 // }
-
+//
 #include <stdio.h>
 #include <algorithm>
 using namespace std;
@@ -46,11 +46,13 @@ int main()
     int x = 3;
     while (m--)
     {
+
         // int x;
         // scanf("%d", &x);
         int l = 0, r = n - 1;
         while (l < r)
         {
+
             int mid = l + r >> 1;
             if (q[mid] >= x)
                 r = mid;
